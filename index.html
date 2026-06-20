@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ Accordion</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <div class="support-badge">
+          <i class="fa-solid fa-circle-question"></i>
+          <span>SUPPORT</span>
+        </div>
+        <h1>Frequently Asked Questions</h1>
+        <p>Everything you need to know about our product and services</p>
+      </div>
+
+      <!-- Search -->
+      <div class="search-container">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search questions..."
+          />
+        </div>
+      </div>
+
+      <!-- FAQ Container -->
+      <div id="faqContainer" class="faq-container">
+        <!-- FAQ Item 1 -->
+        <div class="accordion-item">
+          <button class="faq-question" aria-expanded="false">
+            <div class="question-content">
+              <div class="icon-wrapper">
+                <i class="fa-solid fa-rocket"></i>
+              </div>
+              <span>What is this accordion widget?</span>
+            </div>
+            <i class="fa-solid fa-chevron-down chevron"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              This is a fully responsive, accessible, and beautifully animated
+              FAQ accordion built with pure HTML, CSS, and JavaScript. It
+              includes smooth animations, search functionality, and keyboard
+              support.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="accordion-item">
+          <button class="faq-question" aria-expanded="false">
+            <div class="question-content">
+              <div class="icon-wrapper">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+              <span>How do I customize the colors?</span>
+            </div>
+            <i class="fa-solid fa-chevron-down chevron"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              You can easily customize colors by editing the CSS variables in
+              <code>styles.css</code>. The main accent color is defined with
+              <code>--primary-color</code>.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="accordion-item">
+          <button class="faq-question" aria-expanded="false">
+            <div class="question-content">
+              <div class="icon-wrapper">
+                <i class="fa-solid fa-keyboard"></i>
+              </div>
+              <span>Does it support keyboard navigation?</span>
+            </div>
+            <i class="fa-solid fa-chevron-down chevron"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes! You can navigate with Tab, open/close with Enter or Space,
+              and use arrow keys to move between questions.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="accordion-item">
+          <button class="faq-question" aria-expanded="false">
+            <div class="question-content">
+              <div class="icon-wrapper">
+                <i class="fa-solid fa-mobile-screen"></i>
+              </div>
+              <span>Is it mobile responsive?</span>
+            </div>
+            <i class="fa-solid fa-chevron-down chevron"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Absolutely. The design is mobile-first and works beautifully on
+              all screen sizes with large touch targets.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div class="accordion-item">
+          <button class="faq-question" aria-expanded="false">
+            <div class="question-content">
+              <div class="icon-wrapper">
+                <i class="fa-solid fa-lock"></i>
+              </div>
+              <span>Can multiple items be open at once?</span>
+            </div>
+            <i class="fa-solid fa-chevron-down chevron"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes. By default, multiple items can stay open. You can change this
+              behavior in the JavaScript if you prefer only one open at a time.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">Built with HTML • CSS • JavaScript</footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
